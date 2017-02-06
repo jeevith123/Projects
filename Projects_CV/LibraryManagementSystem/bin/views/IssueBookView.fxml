@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controllers.IssueBookController">
+   <children>
+      <VBox prefHeight="282.0" prefWidth="490.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="490.0" text="Issue Book">
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+            </Label>
+            <HBox alignment="CENTER_RIGHT" prefHeight="45.0" prefWidth="490.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="164.0" text="Book ID">
+                     <padding>
+                        <Insets bottom="7.0" top="7.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="bookIdField" alignment="CENTER_RIGHT" prefHeight="27.0" prefWidth="293.0">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="45.0" prefWidth="490.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="164.0" text="User ID">
+                     <padding>
+                        <Insets bottom="7.0" top="7.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="userIdField" alignment="CENTER_RIGHT" prefHeight="27.0" prefWidth="293.0">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="57.0" prefWidth="490.0">
+               <VBox.margin>
+                  <Insets top="100.0" />
+               </VBox.margin>
+               <children>
+                  <Label fx:id="errorMessage" alignment="CENTER" prefHeight="31.0" prefWidth="284.0">
+                     <padding>
+                        <Insets bottom="7.0" top="7.0" />
+                     </padding>
+                  </Label>
+                  <Button fx:id="issueButton" mnemonicParsing="false" onAction="#issueBook" prefHeight="27.0" prefWidth="103.0" text="Issue">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#onBack" prefHeight="27.0" prefWidth="53.0" text="Back">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

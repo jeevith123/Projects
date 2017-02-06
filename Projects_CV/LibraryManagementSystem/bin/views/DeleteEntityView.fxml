@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="149.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DeleteEntityController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="139.0" prefWidth="400.0">
+         <children>
+            <Label fx:id="deleteTitle" alignment="CENTER" prefHeight="17.0" prefWidth="400.0" text="Delete Entity">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+            </Label>
+            <HBox prefHeight="16.0" prefWidth="400.0">
+               <children>
+                  <Label fx:id="idLabel" alignment="CENTER" prefHeight="37.0" prefWidth="127.0" text="Label">
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="idField" prefHeight="36.0" prefWidth="252.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="53.0" prefWidth="400.0">
+               <children>
+                  <Label fx:id="errorMessage" alignment="CENTER" prefHeight="17.0" prefWidth="268.0">
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Button fx:id="deleteButton" alignment="CENTER" mnemonicParsing="false" onAction="#onDelete" prefHeight="39.0" prefWidth="127.0" text="Delete!">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#onBack" prefHeight="37.0" prefWidth="118.0" text="Back">
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets left="5.0" right="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

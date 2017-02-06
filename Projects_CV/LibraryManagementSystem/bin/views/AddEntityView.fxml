@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="389.0" prefWidth="435.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AddEntityController">
+   <children>
+      <VBox prefHeight="406.0" prefWidth="435.0">
+         <children>
+            <Label fx:id="title" alignment="CENTER" contentDisplay="CENTER" prefHeight="2.0" prefWidth="444.0" text="Label">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+            </Label>
+            <HBox prefHeight="344.0" prefWidth="435.0">
+               <children>
+                  <TableView fx:id="entityProperties" prefHeight="312.0" prefWidth="443.0">
+                    <columns>
+                      <TableColumn fx:id="fields" prefWidth="195.0" text="Field" />
+                      <TableColumn fx:id="values" prefWidth="219.0" text="Value" />
+                    </columns>
+                  </TableView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="15.0" prefWidth="435.0">
+               <children>
+                  <Label fx:id="errorMessage" alignment="CENTER" prefHeight="42.0" prefWidth="290.0" textFill="#da1111">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Button fx:id="addButton" mnemonicParsing="false" onAction="#onAdd" prefHeight="32.0" prefWidth="97.0" text="Add">
+                     <HBox.margin>
+                        <Insets bottom="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#onBack" prefHeight="32.0" prefWidth="97.0" text="Back">
+                     <HBox.margin>
+                        <Insets bottom="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="142.0" prefWidth="398.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.UpdateEntitySearchController">
+   <children>
+      <VBox prefHeight="140.0" prefWidth="398.0">
+         <children>
+            <Label fx:id="searchTitle" alignment="CENTER" prefHeight="17.0" prefWidth="400.0" text="Search">
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+            </Label>
+            <HBox prefHeight="46.0" prefWidth="398.0">
+               <children>
+                  <Label fx:id="idLabel" alignment="CENTER" prefHeight="17.0" prefWidth="108.0" text="ID">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="idField" prefHeight="27.0" prefWidth="276.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="54.0" prefWidth="398.0">
+               <children>
+                  <Label fx:id="errorMessage" alignment="CENTER" prefHeight="34.0" prefWidth="246.0" />
+                  <Button mnemonicParsing="false" onAction="#doSearch" prefHeight="27.0" prefWidth="88.0" text="Search">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#onBack" prefHeight="27.0" prefWidth="62.0" text="Back">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="317.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.InvoiceListController">
+   <children>
+      <VBox prefHeight="329.0" prefWidth="650.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="37.0" prefWidth="672.0" text="Invoices">
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+            </Label>
+            <TableView fx:id="invoicesTable" prefHeight="264.0" prefWidth="478.0">
+               <columns>
+                  <TableColumn fx:id="invoiceId" prefWidth="75.0" text="Invoice ID" />
+                  <TableColumn fx:id="userName" prefWidth="175.0" text="User Name" />
+                  <TableColumn fx:id="bookName" prefWidth="237.0" text="Book Name" />
+                  <TableColumn fx:id="moreDetails" prefWidth="142.0" />
+               </columns></TableView>
+            <HBox alignment="CENTER_RIGHT">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#goBack" prefHeight="19.0" prefWidth="120.0" text="Back">
+                     <HBox.margin>
+                        <Insets bottom="10.0" top="5.0" />
+                     </HBox.margin></Button>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

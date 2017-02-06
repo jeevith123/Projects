@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="395.0" prefWidth="553.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ReaderViewController">
+   <children>
+      <VBox prefHeight="395.0" prefWidth="553.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="584.0" text="Welcome Reader">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+            </Label>
+            <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="27.0" prefWidth="550.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onLogout" prefHeight="27.0" prefWidth="93.0" text="Logout" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets left="10.0" right="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <TableView fx:id="myInformationTable" prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TableColumn fx:id="fields" prefWidth="221.0" />
+                <TableColumn fx:id="values" prefWidth="311.0" />
+              </columns>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </TableView>
+            <HBox alignment="CENTER" prefHeight="212.0" prefWidth="550.0">
+               <children>
+                  <VBox prefHeight="212.0" prefWidth="268.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="17.0" prefWidth="279.0" text="My Stuff">
+                           <padding>
+                              <Insets bottom="10.0" top="10.0" />
+                           </padding>
+                        </Label>
+                        <VBox alignment="CENTER" prefHeight="175.0" prefWidth="268.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#viewBooks" prefHeight="27.0" prefWidth="200.0" text="View My Books">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#viewInvoices" prefHeight="27.0" prefWidth="200.0" text="View My Invoices">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#changePassword" prefHeight="27.0" prefWidth="200.0" text="Change Password" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="212.0" prefWidth="268.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="17.0" prefWidth="279.0" text="Library Stuff">
+                           <padding>
+                              <Insets bottom="10.0" top="10.0" />
+                           </padding>
+                        </Label>
+                        <VBox alignment="CENTER" prefHeight="175.0" prefWidth="268.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#viewAllBooks" prefHeight="27.0" prefWidth="200.0" text="View All Books">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#searchBooks" prefHeight="27.0" prefWidth="200.0" text="Search Books">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
